@@ -1,9 +1,5 @@
 # Mritunjay Kumar — Portfolio
 
-Dark glassmorphism portfolio with an interactive **3D particle portrait** hero (Three.js).
-
-## Your photo
-
 The hero loads `assets/profile.png` — a background-removed (transparent) cutout of your photo; transparent pixels are carved away so your bust floats as a 3D point cloud, with depth derived from pixel brightness.
 
 To swap in a new photo later: background-remove it (e.g. remove.bg or `rembg`), square-crop it, and save it over `assets/profile.png`. A plain `assets/profile.jpg` also works as a fallback (near-black pixels are carved instead), and with no image at all the hero shows an "MK" monogram particle cloud. The original source image is kept at `assets/profile_src.webp`.
