@@ -78,6 +78,14 @@
       return;
     }
 
+    // Point the return trip at whatever domain the page is actually
+    // served from, so the visitor always lands back on this site
+    // (localhost, staging or production) without editing any config.
+    var redirect = form.querySelector('input[name="_redirect"]');
+    if (redirect && window.location.origin && window.location.origin !== "null") {
+      redirect.value = window.location.origin + window.location.pathname + "?sent=1";
+    }
+
     // valid — let the browser POST to FormSubmit
     setAlert("", null);
     submitBtn.disabled = true;

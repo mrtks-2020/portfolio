@@ -360,9 +360,11 @@
           <form class="contact-form" id="contactForm"
                 action="https://formsubmit.co/mrt.mritunjay@gmail.com"
                 method="POST" novalidate>
-            <!-- send the visitor back here instead of FormSubmit's own page;
-                 must be an absolute URL of your deployed site -->
-            <input type="hidden" name="_redirect" value="https://your-domain.com/?sent=1" />
+            <!-- Sends the visitor back to this page instead of FormSubmit's own
+                 thank-you page. js/contact.js rewrites this to the live domain
+                 on submit, so it needs no editing; this value is only the
+                 no-JavaScript fallback. -->
+            <input type="hidden" name="_redirect" value="https://mrtks-2020.github.io/portfolio/?sent=1" />
             <input type="hidden" name="_subject" value="New message from your portfolio" />
             <input type="hidden" name="_template" value="table" />
             <div class="cf-alert" id="cfAlert" role="alert" tabindex="-1" hidden></div>
@@ -453,6 +455,6 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
   <script src="js/hero3d.js?v=7"></script>
   <script src="js/main.js?v=2"></script>
-  <script src="js/contact.js?v=3"></script>
+  <script src="js/contact.js?v=4"></script>
 </body>
 </html>

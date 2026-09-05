@@ -12,7 +12,7 @@ It posts to [FormSubmit.co](https://formsubmit.co), which needs no account and n
 
 ### Setup
 
-1. In `index.html`, set the hidden `_redirect` field to your deployed URL, e.g. `https://your-domain.com/?sent=1` — the `?sent=1` is what triggers the success banner when the visitor lands back here.
+1. The hidden `_redirect` field is set to `https://mrtks-2020.github.io/portfolio/?sent=1`, and `js/contact.js` rewrites it to whatever domain the page is served from — so it needs no editing if the URL changes. The `?sent=1` is what triggers the success banner when the visitor lands back.
 2. Deploy, then submit the form once. FormSubmit.co emails you a one-time confirmation link; click it and the form is live. Submissions then arrive at `mrt.mritunjay@gmail.com`.
 
 Note that step 2 only works from the deployed site, not from `localhost` — FormSubmit needs a real origin to register.
